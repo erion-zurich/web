@@ -48,3 +48,17 @@ npm run dev
 ```
 
 Then open `http://localhost:3000` in your browser.
+
+---
+
+## Contact form and Resend
+
+The contact and quote form posts to the Vercel Function at `/api/contact`. Add these environment variables in **Vercel → Project Settings → Environment Variables** before deploying:
+
+```text
+RESEND_API_KEY=re_xxxxxxxxx
+CONTACT_TO_EMAIL=the-address-that-receives-leads@example.ch
+CONTACT_FROM_EMAIL=Fugenmeister Website <anfragen@your-verified-domain.ch>
+```
+
+`CONTACT_FROM_EMAIL` must use a domain verified in Resend. The fallback `onboarding@resend.dev` is useful only for initial Resend testing. Apply the variables to Production, Preview, and Development as appropriate, then redeploy the project.
