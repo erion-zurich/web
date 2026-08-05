@@ -1,279 +1,899 @@
-<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{colors:{"background":"#f7f9fb","surface-container":"#eceef0","secondary-fixed-dim":"#bcc7de","outline":"#727783","on-tertiary":"#ffffff","surface-container-low":"#f2f4f6","surface-container-highest":"#e0e3e5","surface-tint":"#175ead","primary-container":"#0055a4","outline-variant":"#c2c6d3","on-primary-container":"#afccff","on-tertiary-fixed":"#0b1c30","error":"#ba1a1a","on-tertiary-fixed-variant":"#38485d","on-surface-variant":"#424751","surface-variant":"#e0e3e5","on-tertiary-container":"#bccce6","primary-fixed-dim":"#a8c8ff","surface-container-lowest":"#ffffff","surface-bright":"#f7f9fb","tertiary-fixed-dim":"#b7c8e1","primary":"#003e7a","on-primary-fixed":"#001b3c","on-error":"#ffffff","tertiary-container":"#47576d","tertiary":"#304054","primary-fixed":"#d5e3ff","inverse-primary":"#a8c8ff","surface-container-high":"#e6e8ea","secondary":"#545f73","inverse-on-surface":"#eff1f3","on-secondary-fixed-variant":"#3c475a","on-primary":"#ffffff","on-secondary-container":"#586377","secondary-container":"#d5e0f8","surface":"#f7f9fb","tertiary-fixed":"#d3e4fe","on-background":"#191c1e","surface-dim":"#d8dadc","on-secondary":"#ffffff","on-primary-fixed-variant":"#004689","inverse-surface":"#2d3133","secondary-fixed":"#d8e3fb","on-surface":"#191c1e","on-error-container":"#93000a","error-container":"#ffdad6","on-secondary-fixed":"#111c2d"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{gutter:"24px","stack-sm":"8px","stack-md":"16px","margin-desktop":"64px","section-gap":"120px","stack-lg":"32px","container-max":"1280px","margin-mobile":"20px"},fontFamily:{"headline-md":["Inter"],"headline-xl":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"label-caps":["Inter"]},fontSize:{"headline-md":["30px",{lineHeight:"38px",letterSpacing:"0em",fontWeight:"600"}],"headline-xl":["60px",{lineHeight:"72px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-caps":["12px",{lineHeight:"16px",letterSpacing:"0.1em",fontWeight:"600"}]}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]"><div class="h-20 max-w-container-max mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Fugenmeister GmbH Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjd0j5-Vwuddfbz94EsJz-phHHztuvrzUHOgloEbUtB_mJtGRM1XYRcUEe3zb3j6aA9c_jL8ahX-AGxm5c9lIw4raIx3elhi5LOZG6IirBJTKtQWUpoMtLZjZ4mJBxHRkHPCIaXQY9M9oZHNyEdh8eTLWb1TbnILiCpPLRFFhpZWleH1z3gab3MOn522e4PgaeOUi5ruJqn5Hipy4EyOtUCFmSJyKDd7RP9O3-Aaz828n6cCrf9shvDQ"/><span class="font-headline-md text-headline-md tracking-tight text-primary uppercase">Fugenmeister GmbH</span></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-primary font-semibold"><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="index.html">Home</a><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="leistungen" href="leistungen.html">Leistungen</a><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="projekte" href="projekte.html">Projekte</a><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="ueber-uns" href="uber-uns.html">Über Uns</a><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="kontakt" href="kontakt.html">Kontakt</a></nav><div class="flex items-center gap-6"><a class="bg-primary-container text-on-primary px-6 py-2.5 rounded-lg font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary transition-all" href="#">Kostenlose Offerte</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
-<!-- Hero Section with Breadcrumbs -->
-<section class="relative bg-surface px-margin-desktop py-stack-lg border-b border-outline-variant">
-<div class="max-w-container-max mx-auto">
-<div class="flex items-center gap-2 mb-stack-md text-label-caps font-label-caps uppercase text-outline tracking-widest">
-<a class="hover:text-primary transition-colors" href="#">Home</a>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-<span class="text-primary">Referenzen &amp; Projekte</span>
-</div>
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-stack-lg">
-<div class="max-w-2xl">
-<h1 class="font-headline-xl text-headline-xl text-on-surface mb-stack-md">
-                        Präzision in <span class="text-primary italic">Referenzen &amp; Projekte</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                        Von historischen Gewölbekellern in der Zürcher Altstadt bis hin zu modernsten Neubauten am See – entdecken Sie unsere Auswahl an erfolgreich abgeschlossenen Abdichtungsprojekten.
-                    </p>
-</div>
-<div class="flex gap-4 pb-2">
-<div class="flex flex-col items-end">
-<span class="font-headline-md text-headline-md text-primary">Referenzen &amp; Projekte</span>
-<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest text-right">Zufriedene Kunden</span>
-</div>
-<div class="w-[1px] h-12 bg-outline-variant"></div>
-<div class="flex flex-col items-end">
-<span class="font-headline-md text-headline-md text-primary">Referenzen &amp; Projekte</span>
-<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest text-right">Jahre Garantie</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Case Study: The Highlight Project -->
-<section class="w-full bg-surface-container-lowest py-section-gap overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-5 space-y-stack-lg relative z-10">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 rounded-full">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="font-label-caps text-[10px] text-primary uppercase tracking-[0.2em]">Aktuelle Fallstudie</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
-                        Kellertrockenlegung <br/>Residenz Enge
-                    </h2>
-<div class="space-y-stack-md">
-<p class="font-body-md text-body-md text-on-surface-variant">
-                            Bei diesem Objekt in Zürich Enge trat durch Mikrorisse in der Betonwand Feuchtigkeit ein. Unser Team implementierte ein mehrstufiges Injektionsverfahren mit hochwertigem Polyurethan-Harz.
-                        </p>
-<div class="grid grid-cols-2 gap-4 pt-4">
-<div class="bg-surface p-4 rounded-lg">
-<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Material</p>
-<p class="font-body-md font-semibold text-on-surface">PU-Harz Injektion</p>
-</div>
-<div class="bg-surface p-4 rounded-lg">
-<p class="font-label-caps text-[10px] text-outline uppercase mb-1">Dauer</p>
-<p class="font-body-md font-semibold text-on-surface">4 Werktage</p>
-</div>
-</div>
-</div>
-<button class="flex items-center gap-4 group">
-<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined">description</span>
-</span>
-<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest border-b border-primary/20 group-hover:border-primary pb-1 transition-all">Details zum Verfahren</span>
-</button>
-</div>
-<!-- Before/After Slider Mockup -->
-<div class="lg:col-span-7 relative">
-<div class="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-<img alt="Vorher Nachher Vergleich" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxoOUsvtLrn0YJ1Y3AlFM-v8UMltX9emKBWlfhL47QIehx7m9mUtFc6jd5HsUv5Z3QXWddlgwUI29JxctEZWDlJNReKquc7iD_rL2oK9gTl70CBCQgjFM8SPBCtgJbo2-2sUa8h-Quvhpg0nvCU-0kZZaFdwPSzhC2qfcGW_0jTxHtTgjRXnHEdwt_kUm0PKv5jeaZ8iWnr-DvsExoiUA6JfJuKjNfhpdyi3Ytdu7Mr4rMRAR8Mh5vsg"/>
-<!-- Overlay Labels -->
-<div class="absolute inset-0 flex pointer-events-none">
-<div class="flex-1 flex items-end p-8 bg-gradient-to-t from-black/60 to-transparent">
-<span class="text-white font-headline-md text-headline-md opacity-80 uppercase tracking-widest">Vorher</span>
-</div>
-<div class="flex-1 flex items-end p-8 bg-gradient-to-t from-primary/60 to-transparent text-right justify-end border-l border-white/20 backdrop-blur-[2px]">
-<span class="text-white font-headline-md text-headline-md uppercase tracking-widest">Nachher</span>
-</div>
-</div>
-<!-- Center Slider Handle Decoration -->
-<div class="absolute inset-y-0 left-1/2 -ml-[2px] w-[4px] bg-white shadow-lg flex items-center justify-center">
-<div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-xl">
-<span class="material-symbols-outlined text-primary">unfold_more</span>
-</div>
-</div>
-</div>
-<!-- Decorative Element -->
-<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-</div>
-</div>
-</div>
-</section>
-<!-- Project Grid -->
-<section class="py-section-gap bg-surface">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="flex flex-col md:flex-row md:items-center justify-between mb-20 gap-stack-lg">
-<div class="space-y-2">
-<h3 class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">Portfolio</h3>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Unsere Kompetenzbereiche</h2>
-</div>
-<div class="flex gap-4 border-b border-outline-variant">
-<button class="px-4 py-2 font-label-caps text-label-caps text-primary border-b-2 border-primary">Alle</button>
-<button class="px-4 py-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">Injektion</button>
-<button class="px-4 py-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">Flachdach</button>
-<button class="px-4 py-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">Neubau</button>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Project Card 1 -->
-<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-resolution shot of a modern glass office building in Zurich during sunset, focusing on the seamless flat roof waterproofing details with professional engineering precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuuVN_BRdd3i6X2HT2NHVxqOd0nieQvw5ivfeebIx70mM6z3Gqq8wvVOGZlGXJq2WYSRe1g3JGGX6S4RWBgA1RUEZkfgmlLY69INttLDympo4deTvvxz1TjkkH6-izuaE93PuWr5Neeg08D9G1zJUyu0-VWHreCfQ6VxG2jebPOOHAFVqGSo6zPQ7_sjXy9SL1NvlXohs0a0oqC__N7XMgfVcXjFV3N_WRDCPIEWD5QSmZjezN7yYgEA"/>
-<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded font-label-caps text-[10px] text-primary uppercase tracking-widest">
-                            Flachdach
-                        </div>
-</div>
-<div class="p-8">
-<h4 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Bürokomplex Oerlikon</h4>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-stack-lg">
-                            Bituminöse zweilagige Abdichtung auf 1'200m² Fläche inklusive Begrünungsvorbereitung.
-                        </p>
-<div class="flex items-center justify-between pt-6 border-t border-outline-variant">
-<span class="font-label-caps text-[10px] text-outline uppercase">Zürich, 2023</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
-</div>
-</div>
-</div>
-<!-- Project Card 2 -->
-<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Technical close-up of a concrete foundation wall with precise injection ports (packers) installed. Clear, industrial lighting highlighting the engineering accuracy of the moisture barrier repair." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44OgBRUNcPiiYybaf96FejM49tJnMGoTe9Av0xn3mwTE6hapWQeSEdExkS2BDkPV8j-xyUKipFrgprKDukZRAJtxB9rmuJzN620fDtatraxvkyAbs47McIGRhuagaKWNHVUReu_nq5FYQh_ZZxgSC8HnLcMMeAFVMnKRWTswwx68qXuLWzGQuUteCivutJEm_SD1cFZw_2OUqZnA-qoP15hQaduHptG4xa-n5WGszSdmFxcSNhELjJw"/>
-<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded font-label-caps text-[10px] text-primary uppercase tracking-widest">
-                            Spezialabdichtung
-                        </div>
-</div>
-<div class="p-8">
-<h4 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Tiefgarage Thalwil</h4>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-stack-lg">
-                            Rissinjektion im Deckenbereich gegen drückendes Wasser. Einsatz von expandierendem Spezial-Schaum.
-                        </p>
-<div class="flex items-center justify-between pt-6 border-t border-outline-variant">
-<span class="font-label-caps text-[10px] text-outline uppercase">Thalwil, 2024</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
-</div>
-</div>
-</div>
-<!-- Project Card 3 -->
-<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 lg:translate-y-12">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Interior view of a renovated historic stone basement in Zurich. The walls are clean and dry, showing high-quality plaster and professional waterproofing finishing. Warm ambient lighting creates a high-end feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD48wPsZy6z5OK06M0fEGpQMNuxllqOswelmx4jpoWTdNd1rgnh0KLahge5vZxGgoumjgkt_PwpSrYzgCwoRrgs5-mPn4yNurHHXoqVJa1TedpCosJ_HKNdGAP6qGKkLACWdyEO9DQk52tGrzFrcOnoO6pZA0DVl1Jox8JiH0QnL55Lj6ZKbKhxnZFzYzKH2yAY2loPM6xw94jSKDp5_4mf-M1Y_DjGv4sJnqWjPNXCSRrdM1C9gUqnA"/>
-<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded font-label-caps text-[10px] text-primary uppercase tracking-widest">
-                            Altbau
-                        </div>
-</div>
-<div class="p-8">
-<h4 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Altstadt Sanierung</h4>
-<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-stack-lg">
-                            Horizontalsperre und Sanierputz-Systeme für ein denkmalgeschütztes Mehrfamilienhaus.
-                        </p>
-<div class="flex items-center justify-between pt-6 border-t border-outline-variant">
-<span class="font-label-caps text-[10px] text-outline uppercase">Zürich, 2023</span>
-<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials Section -->
-<section class="py-section-gap bg-primary text-on-primary">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="flex flex-col items-center text-center mb-20">
-<h2 class="font-headline-lg text-headline-lg mb-4">Stimmen unserer Partner</h2>
-<div class="w-24 h-[2px] bg-on-primary-container"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Testimonial 1 -->
-<div class="p-10 border border-on-primary/10 rounded-2xl flex flex-col justify-between">
-<div>
-<div class="flex gap-1 mb-6">
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-lg text-body-lg italic leading-relaxed mb-8">"Die Professionalität von Fugenmeister GmbH hat uns beeindruckt. Pünktlich, sauber und absolut dicht – genau das, was wir für unser Projekt erwartet haben."</p>
-</div>
-<div>
-<p class="font-headline-md text-[18px] font-semibold">M. Müller</p>
-<p class="font-label-caps text-[10px] uppercase opacity-60">Architekturbüro Müller &amp; Partner</p>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="p-10 bg-on-primary/5 rounded-2xl flex flex-col justify-between transform lg:-translate-y-8">
-<div>
-<div class="flex gap-1 mb-6">
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-lg text-body-lg italic leading-relaxed mb-8">
-                            "Seit Jahren hatten wir Feuchtigkeitsprobleme im Keller. Das Team hat das Problem innerhalb einer Woche dauerhaft gelöst. Uneingeschränkt empfehlenswert!"
-                        </p>
-</div>
-<div>
-<p class="font-headline-md text-[18px] font-semibold">Dr. S. Weber</p>
-<p class="font-label-caps text-[10px] uppercase opacity-60">Privathauseigentümer, Küsnacht</p>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="p-10 border border-on-primary/10 rounded-2xl flex flex-col justify-between">
-<div>
-<div class="flex gap-1 mb-6">
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-lg text-body-lg italic leading-relaxed mb-8">
-                            "Präzise Offerte und transparente Kommunikation. Die Ausführung der Injektionstechnik war technisch auf höchstem Niveau."
-                        </p>
-</div>
-<div>
-<p class="font-headline-md text-[18px] font-semibold">L. Brunner</p>
-<p class="font-label-caps text-[10px] uppercase opacity-60">Projektleiter, Baugenossenschaft Fugenmeister</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA -->
-<section class="py-section-gap bg-surface relative overflow-hidden">
-<!-- Abstract Background SVG -->
-<svg class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none" preserveaspectratio="none" viewbox="0 0 100 100">
-<path class="text-primary" d="M0 100 L100 0 L100 100 Z" fill="currentColor"></path>
-</svg>
-<div class="max-w-container-max mx-auto px-margin-desktop text-center relative z-10">
-<div class="max-w-3xl mx-auto space-y-stack-lg">
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Planen Sie ein neues Projekt?</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
-                    Lassen Sie uns gemeinsam die beste technische Lösung für Ihr Bauwerk finden. Unsere Experten beraten Sie unverbindlich direkt vor Ort.
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      window.tailwind = window.tailwind || {};
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#f7f9fb",
+              "surface-container": "#eceef0",
+              "secondary-fixed-dim": "#bcc7de",
+              outline: "#727783",
+              "on-tertiary": "#ffffff",
+              "surface-container-low": "#f2f4f6",
+              "surface-container-highest": "#e0e3e5",
+              "surface-tint": "#175ead",
+              "primary-container": "#0055a4",
+              "outline-variant": "#c2c6d3",
+              "on-primary-container": "#afccff",
+              "on-tertiary-fixed": "#0b1c30",
+              error: "#ba1a1a",
+              "on-tertiary-fixed-variant": "#38485d",
+              "on-surface-variant": "#424751",
+              "surface-variant": "#e0e3e5",
+              "on-tertiary-container": "#bccce6",
+              "primary-fixed-dim": "#a8c8ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f7f9fb",
+              "tertiary-fixed-dim": "#b7c8e1",
+              primary: "#003e7a",
+              "on-primary-fixed": "#001b3c",
+              "on-error": "#ffffff",
+              "tertiary-container": "#47576d",
+              tertiary: "#304054",
+              "primary-fixed": "#d5e3ff",
+              "inverse-primary": "#a8c8ff",
+              "surface-container-high": "#e6e8ea",
+              secondary: "#545f73",
+              "inverse-on-surface": "#eff1f3",
+              "on-secondary-fixed-variant": "#3c475a",
+              "on-primary": "#ffffff",
+              "on-secondary-container": "#586377",
+              "secondary-container": "#d5e0f8",
+              surface: "#f7f9fb",
+              "tertiary-fixed": "#d3e4fe",
+              "on-background": "#191c1e",
+              "surface-dim": "#d8dadc",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed-variant": "#004689",
+              "inverse-surface": "#2d3133",
+              "secondary-fixed": "#d8e3fb",
+              "on-surface": "#191c1e",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed": "#111c2d",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              gutter: "24px",
+              "stack-sm": "8px",
+              "stack-md": "16px",
+              "margin-desktop": "64px",
+              "section-gap": "120px",
+              "stack-lg": "32px",
+              "container-max": "1280px",
+              "margin-mobile": "20px",
+            },
+            fontFamily: {
+              "headline-md": ["Inter"],
+              "headline-xl": ["Inter"],
+              "body-md": ["Inter"],
+              "headline-lg-mobile": ["Inter"],
+              "body-lg": ["Inter"],
+              "headline-lg": ["Inter"],
+              "label-caps": ["Inter"],
+            },
+            fontSize: {
+              "headline-md": [
+                "30px",
+                { lineHeight: "38px", letterSpacing: "0em", fontWeight: "600" },
+              ],
+              "headline-xl": [
+                "60px",
+                {
+                  lineHeight: "72px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-md": [
+                "16px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-lg-mobile": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                { lineHeight: "28px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-caps": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.1em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="brand.css" rel="stylesheet" />
+  </head>
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
+    >
+      <div
+        class="h-20 max-w-container-max mx-auto px-margin-desktop flex items-center justify-between"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            alt="Fugenmeister GmbH Logo"
+            class="h-12 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjd0j5-Vwuddfbz94EsJz-phHHztuvrzUHOgloEbUtB_mJtGRM1XYRcUEe3zb3j6aA9c_jL8ahX-AGxm5c9lIw4raIx3elhi5LOZG6IirBJTKtQWUpoMtLZjZ4mJBxHRkHPCIaXQY9M9oZHNyEdh8eTLWb1TbnILiCpPLRFFhpZWleH1z3gab3MOn522e4PgaeOUi5ruJqn5Hipy4EyOtUCFmSJyKDd7RP9O3-Aaz828n6cCrf9shvDQ"
+          /><span
+            class="font-headline-md text-headline-md tracking-tight text-primary uppercase"
+            >Fugenmeister GmbH</span
+          >
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-8"
+          data-active-classes="text-primary font-semibold"
+        >
+          <a
+            class="text-body-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="home"
+            href="index.html"
+            >Home</a
+          ><a
+            class="text-body-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="leistungen"
+            href="leistungen.html"
+            >Leistungen</a
+          ><a
+            aria-current="page"
+            class="transition-colors text-primary font-semibold"
+            data-path="projekte"
+            href="projekte.html"
+            >Projekte</a
+          ><a
+            class="text-body-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="ueber-uns"
+            href="uber-uns.html"
+            >Über Uns</a
+          ><a
+            class="text-body-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="kontakt"
+            href="kontakt.html"
+            >Kontakt</a
+          >
+        </nav>
+        <div class="flex items-center gap-6">
+          <a
+            class="bg-primary-container text-on-primary px-6 py-2.5 rounded-lg font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary transition-all"
+            href="#"
+            >Kostenlose Offerte</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- Hero Section with Breadcrumbs -->
+        <section
+          class="relative bg-surface px-margin-desktop py-stack-lg border-b border-outline-variant"
+        >
+          <div class="max-w-container-max mx-auto">
+            <div
+              class="flex items-center gap-2 mb-stack-md text-label-caps font-label-caps uppercase text-outline tracking-widest"
+            >
+              <a class="hover:text-primary transition-colors" href="#">Home</a>
+              <span class="material-symbols-outlined text-[14px]"
+                >chevron_right</span
+              >
+              <span class="text-primary">Referenzen &amp; Projekte</span>
+            </div>
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-stack-lg"
+            >
+              <div class="max-w-2xl">
+                <h1
+                  class="font-headline-xl text-headline-xl text-on-surface mb-stack-md"
+                >
+                  Präzision in
+                  <span class="text-primary italic"
+                    >Referenzen &amp; Projekte</span
+                  >
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
+                >
+                  Von historischen Gewölbekellern in der Zürcher Altstadt bis
+                  hin zu modernsten Neubauten am See – entdecken Sie unsere
+                  Auswahl an erfolgreich abgeschlossenen Abdichtungsprojekten.
                 </p>
-<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-<a class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-all shadow-lg hover:-translate-y-1" href="#">
-                        Kostenlose Analyse anfordern
-                    </a>
-<a class="w-full sm:w-auto border border-outline px-10 py-4 rounded-lg font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:bg-surface-container transition-all" href="#">
-                        Alle Leistungen ansehen
-                    </a>
-</div>
-</div>
-</div>
-</section>
-<script>
-        // Simple counter animation logic can be added here if needed for numbers
-        document.addEventListener('DOMContentLoaded', () => {
+              </div>
+              <div class="flex gap-4 pb-2">
+                <div class="flex flex-col items-end">
+                  <span class="font-headline-md text-headline-md text-primary"
+                    >Referenzen &amp; Projekte</span
+                  >
+                  <span
+                    class="font-label-caps text-label-caps text-outline uppercase tracking-widest text-right"
+                    >Zufriedene Kunden</span
+                  >
+                </div>
+                <div class="w-[1px] h-12 bg-outline-variant"></div>
+                <div class="flex flex-col items-end">
+                  <span class="font-headline-md text-headline-md text-primary"
+                    >Referenzen &amp; Projekte</span
+                  >
+                  <span
+                    class="font-label-caps text-label-caps text-outline uppercase tracking-widest text-right"
+                    >Jahre Garantie</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Case Study: The Highlight Project -->
+        <section
+          class="w-full bg-surface-container-lowest py-section-gap overflow-hidden"
+        >
+          <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center"
+            >
+              <div class="lg:col-span-5 space-y-stack-lg relative z-10">
+                <div
+                  class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 rounded-full"
+                >
+                  <span
+                    class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                  ></span>
+                  <span
+                    class="font-label-caps text-[10px] text-primary uppercase tracking-[0.2em]"
+                    >Aktuelle Fallstudie</span
+                  >
+                </div>
+                <h2
+                  class="font-headline-lg text-headline-lg text-on-surface leading-tight"
+                >
+                  Kellertrockenlegung <br />Residenz Enge
+                </h2>
+                <div class="space-y-stack-md">
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Bei diesem Objekt in Zürich Enge trat durch Mikrorisse in
+                    der Betonwand Feuchtigkeit ein. Unser Team implementierte
+                    ein mehrstufiges Injektionsverfahren mit hochwertigem
+                    Polyurethan-Harz.
+                  </p>
+                  <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="bg-surface p-4 rounded-lg">
+                      <p
+                        class="font-label-caps text-[10px] text-outline uppercase mb-1"
+                      >
+                        Material
+                      </p>
+                      <p class="font-body-md font-semibold text-on-surface">
+                        PU-Harz Injektion
+                      </p>
+                    </div>
+                    <div class="bg-surface p-4 rounded-lg">
+                      <p
+                        class="font-label-caps text-[10px] text-outline uppercase mb-1"
+                      >
+                        Dauer
+                      </p>
+                      <p class="font-body-md font-semibold text-on-surface">
+                        4 Werktage
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="flex items-center gap-4 group">
+                  <span
+                    class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center transition-transform group-hover:scale-110"
+                  >
+                    <span class="material-symbols-outlined">description</span>
+                  </span>
+                  <span
+                    class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest border-b border-primary/20 group-hover:border-primary pb-1 transition-all"
+                    >Details zum Verfahren</span
+                  >
+                </button>
+              </div>
+              <!-- Before/After Slider Mockup -->
+              <div class="lg:col-span-7 relative">
+                <div
+                  class="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl"
+                >
+                  <img
+                    alt="Vorher Nachher Vergleich"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxoOUsvtLrn0YJ1Y3AlFM-v8UMltX9emKBWlfhL47QIehx7m9mUtFc6jd5HsUv5Z3QXWddlgwUI29JxctEZWDlJNReKquc7iD_rL2oK9gTl70CBCQgjFM8SPBCtgJbo2-2sUa8h-Quvhpg0nvCU-0kZZaFdwPSzhC2qfcGW_0jTxHtTgjRXnHEdwt_kUm0PKv5jeaZ8iWnr-DvsExoiUA6JfJuKjNfhpdyi3Ytdu7Mr4rMRAR8Mh5vsg"
+                  />
+                  <!-- Overlay Labels -->
+                  <div class="absolute inset-0 flex pointer-events-none">
+                    <div
+                      class="flex-1 flex items-end p-8 bg-gradient-to-t from-black/60 to-transparent"
+                    >
+                      <span
+                        class="text-white font-headline-md text-headline-md opacity-80 uppercase tracking-widest"
+                        >Vorher</span
+                      >
+                    </div>
+                    <div
+                      class="flex-1 flex items-end p-8 bg-gradient-to-t from-primary/60 to-transparent text-right justify-end border-l border-white/20 backdrop-blur-[2px]"
+                    >
+                      <span
+                        class="text-white font-headline-md text-headline-md uppercase tracking-widest"
+                        >Nachher</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Center Slider Handle Decoration -->
+                  <div
+                    class="absolute inset-y-0 left-1/2 -ml-[2px] w-[4px] bg-white shadow-lg flex items-center justify-center"
+                  >
+                    <div
+                      class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-xl"
+                    >
+                      <span class="material-symbols-outlined text-primary"
+                        >unfold_more</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Decorative Element -->
+                <div
+                  class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/5 rounded-full blur-3xl -z-10"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Project Grid -->
+        <section class="py-section-gap bg-surface">
+          <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between mb-20 gap-stack-lg"
+            >
+              <div class="space-y-2">
+                <h3
+                  class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]"
+                >
+                  Portfolio
+                </h3>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Unsere Kompetenzbereiche
+                </h2>
+              </div>
+              <div class="flex gap-4 border-b border-outline-variant">
+                <button
+                  class="px-4 py-2 font-label-caps text-label-caps text-primary border-b-2 border-primary"
+                >
+                  Alle
+                </button>
+                <button
+                  class="px-4 py-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors"
+                >
+                  Injektion
+                </button>
+                <button
+                  class="px-4 py-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors"
+                >
+                  Flachdach
+                </button>
+                <button
+                  class="px-4 py-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors"
+                >
+                  Neubau
+                </button>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+            >
+              <!-- Project Card 1 -->
+              <div
+                class="group bg-surface-container-low rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    data-alt="High-resolution shot of a modern glass office building in Zurich during sunset, focusing on the seamless flat roof waterproofing details with professional engineering precision."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuuVN_BRdd3i6X2HT2NHVxqOd0nieQvw5ivfeebIx70mM6z3Gqq8wvVOGZlGXJq2WYSRe1g3JGGX6S4RWBgA1RUEZkfgmlLY69INttLDympo4deTvvxz1TjkkH6-izuaE93PuWr5Neeg08D9G1zJUyu0-VWHreCfQ6VxG2jebPOOHAFVqGSo6zPQ7_sjXy9SL1NvlXohs0a0oqC__N7XMgfVcXjFV3N_WRDCPIEWD5QSmZjezN7yYgEA"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded font-label-caps text-[10px] text-primary uppercase tracking-widest"
+                  >
+                    Flachdach
+                  </div>
+                </div>
+                <div class="p-8">
+                  <h4
+                    class="font-headline-md text-headline-md text-on-surface mb-stack-sm"
+                  >
+                    Bürokomplex Oerlikon
+                  </h4>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-stack-lg"
+                  >
+                    Bituminöse zweilagige Abdichtung auf 1'200m² Fläche
+                    inklusive Begrünungsvorbereitung.
+                  </p>
+                  <div
+                    class="flex items-center justify-between pt-6 border-t border-outline-variant"
+                  >
+                    <span
+                      class="font-label-caps text-[10px] text-outline uppercase"
+                      >Zürich, 2023</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 2 -->
+              <div
+                class="group bg-surface-container-low rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    data-alt="Technical close-up of a concrete foundation wall with precise injection ports (packers) installed. Clear, industrial lighting highlighting the engineering accuracy of the moisture barrier repair."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44OgBRUNcPiiYybaf96FejM49tJnMGoTe9Av0xn3mwTE6hapWQeSEdExkS2BDkPV8j-xyUKipFrgprKDukZRAJtxB9rmuJzN620fDtatraxvkyAbs47McIGRhuagaKWNHVUReu_nq5FYQh_ZZxgSC8HnLcMMeAFVMnKRWTswwx68qXuLWzGQuUteCivutJEm_SD1cFZw_2OUqZnA-qoP15hQaduHptG4xa-n5WGszSdmFxcSNhELjJw"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded font-label-caps text-[10px] text-primary uppercase tracking-widest"
+                  >
+                    Spezialabdichtung
+                  </div>
+                </div>
+                <div class="p-8">
+                  <h4
+                    class="font-headline-md text-headline-md text-on-surface mb-stack-sm"
+                  >
+                    Tiefgarage Thalwil
+                  </h4>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-stack-lg"
+                  >
+                    Rissinjektion im Deckenbereich gegen drückendes Wasser.
+                    Einsatz von expandierendem Spezial-Schaum.
+                  </p>
+                  <div
+                    class="flex items-center justify-between pt-6 border-t border-outline-variant"
+                  >
+                    <span
+                      class="font-label-caps text-[10px] text-outline uppercase"
+                      >Thalwil, 2024</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 3 -->
+              <div
+                class="group bg-surface-container-low rounded-xl overflow-hidden hover:shadow-xl transition-all duration-500 lg:translate-y-12"
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    data-alt="Interior view of a renovated historic stone basement in Zurich. The walls are clean and dry, showing high-quality plaster and professional waterproofing finishing. Warm ambient lighting creates a high-end feel."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD48wPsZy6z5OK06M0fEGpQMNuxllqOswelmx4jpoWTdNd1rgnh0KLahge5vZxGgoumjgkt_PwpSrYzgCwoRrgs5-mPn4yNurHHXoqVJa1TedpCosJ_HKNdGAP6qGKkLACWdyEO9DQk52tGrzFrcOnoO6pZA0DVl1Jox8JiH0QnL55Lj6ZKbKhxnZFzYzKH2yAY2loPM6xw94jSKDp5_4mf-M1Y_DjGv4sJnqWjPNXCSRrdM1C9gUqnA"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded font-label-caps text-[10px] text-primary uppercase tracking-widest"
+                  >
+                    Altbau
+                  </div>
+                </div>
+                <div class="p-8">
+                  <h4
+                    class="font-headline-md text-headline-md text-on-surface mb-stack-sm"
+                  >
+                    Altstadt Sanierung
+                  </h4>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-stack-lg"
+                  >
+                    Horizontalsperre und Sanierputz-Systeme für ein
+                    denkmalgeschütztes Mehrfamilienhaus.
+                  </p>
+                  <div
+                    class="flex items-center justify-between pt-6 border-t border-outline-variant"
+                  >
+                    <span
+                      class="font-label-caps text-[10px] text-outline uppercase"
+                      >Zürich, 2023</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="py-section-gap bg-primary text-on-primary">
+          <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="flex flex-col items-center text-center mb-20">
+              <h2 class="font-headline-lg text-headline-lg mb-4">
+                Stimmen unserer Partner
+              </h2>
+              <div class="w-24 h-[2px] bg-on-primary-container"></div>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+            >
+              <!-- Testimonial 1 -->
+              <div
+                class="p-10 border border-on-primary/10 rounded-2xl flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex gap-1 mb-6">
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-lg text-body-lg italic leading-relaxed mb-8"
+                  >
+                    "Die Professionalität von Fugenmeister GmbH hat uns
+                    beeindruckt. Pünktlich, sauber und absolut dicht – genau
+                    das, was wir für unser Projekt erwartet haben."
+                  </p>
+                </div>
+                <div>
+                  <p class="font-headline-md text-[18px] font-semibold">
+                    M. Müller
+                  </p>
+                  <p class="font-label-caps text-[10px] uppercase opacity-60">
+                    Architekturbüro Müller &amp; Partner
+                  </p>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div
+                class="p-10 bg-on-primary/5 rounded-2xl flex flex-col justify-between transform lg:-translate-y-8"
+              >
+                <div>
+                  <div class="flex gap-1 mb-6">
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-lg text-body-lg italic leading-relaxed mb-8"
+                  >
+                    "Seit Jahren hatten wir Feuchtigkeitsprobleme im Keller. Das
+                    Team hat das Problem innerhalb einer Woche dauerhaft gelöst.
+                    Uneingeschränkt empfehlenswert!"
+                  </p>
+                </div>
+                <div>
+                  <p class="font-headline-md text-[18px] font-semibold">
+                    Dr. S. Weber
+                  </p>
+                  <p class="font-label-caps text-[10px] uppercase opacity-60">
+                    Privathauseigentümer, Küsnacht
+                  </p>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div
+                class="p-10 border border-on-primary/10 rounded-2xl flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex gap-1 mb-6">
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-on-primary-container"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-lg text-body-lg italic leading-relaxed mb-8"
+                  >
+                    "Präzise Offerte und transparente Kommunikation. Die
+                    Ausführung der Injektionstechnik war technisch auf höchstem
+                    Niveau."
+                  </p>
+                </div>
+                <div>
+                  <p class="font-headline-md text-[18px] font-semibold">
+                    L. Brunner
+                  </p>
+                  <p class="font-label-caps text-[10px] uppercase opacity-60">
+                    Projektleiter, Baugenossenschaft Fugenmeister
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Final CTA -->
+        <section class="py-section-gap bg-surface relative overflow-hidden">
+          <!-- Abstract Background SVG -->
+          <svg
+            class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none"
+            preserveaspectratio="none"
+            viewbox="0 0 100 100"
+          >
+            <path
+              class="text-primary"
+              d="M0 100 L100 0 L100 100 Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <div
+            class="max-w-container-max mx-auto px-margin-desktop text-center relative z-10"
+          >
+            <div class="max-w-3xl mx-auto space-y-stack-lg">
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                Planen Sie ein neues Projekt?
+              </h2>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant mb-12"
+              >
+                Lassen Sie uns gemeinsam die beste technische Lösung für Ihr
+                Bauwerk finden. Unsere Experten beraten Sie unverbindlich direkt
+                vor Ort.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row items-center justify-center gap-6"
+              >
+                <a
+                  class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-all shadow-lg hover:-translate-y-1"
+                  href="#"
+                >
+                  Kostenlose Analyse anfordern
+                </a>
+                <a
+                  class="w-full sm:w-auto border border-outline px-10 py-4 rounded-lg font-label-caps text-label-caps uppercase tracking-widest text-on-surface hover:bg-surface-container transition-all"
+                  href="#"
+                >
+                  Alle Leistungen ansehen
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+          // Simple counter animation logic can be added here if needed for numbers
+          document.addEventListener("DOMContentLoaded", () => {
             const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('translate-y-0', 'opacity-100');
-                        entry.target.classList.remove('translate-y-10', 'opacity-0');
-                    }
-                });
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("translate-y-0", "opacity-100");
+                  entry.target.classList.remove("translate-y-10", "opacity-0");
+                }
+              });
             }, observerOptions);
 
-            document.querySelectorAll('.group').forEach(el => {
-                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-                observer.observe(el);
+            document.querySelectorAll(".group").forEach((el) => {
+              el.classList.add(
+                "transition-all",
+                "duration-700",
+                "opacity-0",
+                "translate-y-10",
+              );
+              observer.observe(el);
             });
-        });
-    </script>
-</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant pt-section-gap pb-stack-lg"><div class="max-w-container-max mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-20"><div class="space-y-stack-md"><img alt="Logo" class="h-8 w-auto mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjd0j5-Vwuddfbz94EsJz-phHHztuvrzUHOgloEbUtB_mJtGRM1XYRcUEe3zb3j6aA9c_jL8ahX-AGxm5c9lIw4raIx3elhi5LOZG6IirBJTKtQWUpoMtLZjZ4mJBxHRkHPCIaXQY9M9oZHNyEdh8eTLWb1TbnILiCpPLRFFhpZWleH1z3gab3MOn522e4PgaeOUi5ruJqn5Hipy4EyOtUCFmSJyKDd7RP9O3-Aaz828n6cCrf9shvDQ"/><p class="text-body-md text-on-surface-variant leading-relaxed">Präzision in der Bauwerksabdichtung. Schweizer Ingenieurskunst für dauerhaften Schutz und Werterhalt.</p></div><div><h4 class="font-label-caps text-label-caps text-primary uppercase mb-stack-lg tracking-widest">Leistungen</h4><ul class="space-y-stack-sm"><li class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Flachdachabdichtung</li><li class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Injektionstechnik</li><li class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Kellertrockenlegung</li><li class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Bauphysik-Beratung</li></ul></div><div><h4 class="font-label-caps text-label-caps text-primary uppercase mb-stack-lg tracking-widest">Kontakt</h4><p class="text-body-md text-on-surface-variant mb-4">Fugenmeister GmbH<br/>Badenerstrasse 120<br/>8004 Zürich</p><p class="text-body-md text-on-surface-variant">T: +41 76 521 54 78<br/>E: info@flugenmeister.ch</p></div><div><h4 class="font-label-caps text-label-caps text-primary uppercase mb-stack-lg tracking-widest">Folgen Sie uns</h4><div class="flex gap-4 mb-8"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">share</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">public</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">business_center</span></div><div class="flex gap-4 text-xs font-label-caps text-outline uppercase"><span>Privacy Policy</span><span>/</span><span>Impressum</span></div></div></div><div class="border-t border-outline-variant pt-stack-lg text-center text-label-caps text-outline uppercase tracking-widest">© 2024 Fugenmeister GmbH. Alle Rechte vorbehalten.</div></div></footer></body></html>
+          });
+        </script>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest border-t border-outline-variant pt-section-gap pb-stack-lg"
+    >
+      <div class="max-w-container-max mx-auto px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-20">
+          <div class="space-y-stack-md">
+            <img
+              alt="Logo"
+              class="h-8 w-auto mb-6"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjd0j5-Vwuddfbz94EsJz-phHHztuvrzUHOgloEbUtB_mJtGRM1XYRcUEe3zb3j6aA9c_jL8ahX-AGxm5c9lIw4raIx3elhi5LOZG6IirBJTKtQWUpoMtLZjZ4mJBxHRkHPCIaXQY9M9oZHNyEdh8eTLWb1TbnILiCpPLRFFhpZWleH1z3gab3MOn522e4PgaeOUi5ruJqn5Hipy4EyOtUCFmSJyKDd7RP9O3-Aaz828n6cCrf9shvDQ"
+            />
+            <p class="text-body-md text-on-surface-variant leading-relaxed">
+              Präzision in der Bauwerksabdichtung. Schweizer Ingenieurskunst für
+              dauerhaften Schutz und Werterhalt.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="font-label-caps text-label-caps text-primary uppercase mb-stack-lg tracking-widest"
+            >
+              Leistungen
+            </h4>
+            <ul class="space-y-stack-sm">
+              <li
+                class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
+              >
+                Flachdachabdichtung
+              </li>
+              <li
+                class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
+              >
+                Injektionstechnik
+              </li>
+              <li
+                class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
+              >
+                Kellertrockenlegung
+              </li>
+              <li
+                class="text-body-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
+              >
+                Bauphysik-Beratung
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-label-caps text-label-caps text-primary uppercase mb-stack-lg tracking-widest"
+            >
+              Kontakt
+            </h4>
+            <p class="text-body-md text-on-surface-variant mb-4">
+              Fugenmeister GmbH<br />Kaiserstuhlstrasse 55<br />8154 Oberglatt
+            </p>
+            <p class="text-body-md text-on-surface-variant">
+              T: +41 76 521 54 78<br />E: info@flugenmeister.ch
+            </p>
+          </div>
+          <div>
+            <h4
+              class="font-label-caps text-label-caps text-primary uppercase mb-stack-lg tracking-widest"
+            >
+              Folgen Sie uns
+            </h4>
+            <div class="flex gap-4 mb-8">
+              <span
+                class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer"
+                >share</span
+              ><span
+                class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer"
+                >public</span
+              ><span
+                class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer"
+                >business_center</span
+              >
+            </div>
+            <div
+              class="flex gap-4 text-xs font-label-caps text-outline uppercase"
+            >
+              <span>Privacy Policy</span><span>/</span><span>Impressum</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-outline-variant pt-stack-lg text-center text-label-caps text-outline uppercase tracking-widest"
+        >
+          © 2024 Fugenmeister GmbH. Alle Rechte vorbehalten.
+        </div>
+      </div>
+    </footer>
+    <script src="brand.js"></script>
+  </body>
+</html>

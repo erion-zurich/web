@@ -1,0 +1,212 @@
+.site-header-inner {
+  height: 5rem;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.site-brand {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #003e7a;
+  text-decoration: none;
+}
+.site-brand img {
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+.form-honeypot {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+}
+.form-floating-label {
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+  color: #727783;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.peer:focus + .form-floating-label,
+.peer:not(:placeholder-shown) + .form-floating-label {
+  top: -1rem;
+  font-size: 10px;
+  color: #003e7a;
+}
+.form-legend {
+  margin-bottom: 0.75rem;
+  color: #727783;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.form-choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.form-choice-row label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #c2c6d3;
+  border-radius: 0.65rem;
+  background: #f7f9fb;
+  cursor: pointer;
+}
+.form-choice-row input,
+.form-consent input {
+  accent-color: #0055a4;
+}
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #424751;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.form-consent input {
+  margin-top: 0.2rem;
+  flex: 0 0 auto;
+}
+.form-status {
+  display: none;
+  padding: 1rem;
+  border-radius: 0.65rem;
+  line-height: 1.5;
+}
+.form-status:not(:empty) {
+  display: block;
+}
+.form-status.is-loading {
+  color: #003e7a;
+  background: #e8f2ff;
+}
+.form-status.is-success {
+  color: #176b3a;
+  background: #e8f7ee;
+}
+.form-status.is-error {
+  color: #93000a;
+  background: #ffdad6;
+}
+#contactForm button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.site-brand-name {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+.site-header nav a {
+  position: relative;
+}
+.site-header nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -0.65rem;
+  height: 2px;
+  border-radius: 999px;
+  background: #0055a4;
+}
+.site-quote {
+  white-space: nowrap;
+}
+.site-menu-button {
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c2c6d3;
+  border-radius: 0.65rem;
+  color: #003e7a;
+  background: #fff;
+}
+@media (max-width: 1023px) {
+  .site-header-inner {
+    gap: 0.75rem;
+  }
+  .site-header nav {
+    position: absolute;
+    inset: 5rem 1.25rem auto;
+    display: none !important;
+    padding: 0.75rem;
+    border: 1px solid #dfe3e8;
+    border-radius: 0.9rem;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 18px 50px rgba(0, 30, 60, 0.14);
+  }
+  .site-header nav.is-open {
+    display: grid !important;
+  }
+  .site-header nav a {
+    padding: 0.75rem 1rem;
+    border-radius: 0.55rem;
+  }
+  .site-header nav a:hover {
+    background: #f2f4f6;
+  }
+  .site-header nav a[aria-current="page"]::after {
+    display: none;
+  }
+  .site-menu-button {
+    display: inline-flex;
+  }
+}
+@media (max-width: 639px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+  .px-margin-desktop {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  .text-headline-xl {
+    font-size: 2.25rem !important;
+    line-height: 1.12 !important;
+    overflow-wrap: anywhere;
+  }
+  .text-headline-lg {
+    font-size: 2rem !important;
+    line-height: 1.18 !important;
+  }
+  .site-header-inner {
+    padding-inline: 1.25rem;
+  }
+  .site-brand-name {
+    font-size: 1rem;
+  }
+  .site-quote {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .site-brand-name {
+    max-width: 8.5rem;
+    white-space: normal;
+    line-height: 1.05;
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Fugenmeister</title>
+  <desc id="desc">A clean geometric capital F</desc>
+
+  <path fill="#003e7a" d="M10 6h45v13H26v10h25v13H26v16H10V6Z"/>
+</svg>
