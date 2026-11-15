@@ -12,11 +12,6 @@
   brand.innerHTML =
     '<img src="assets/fugenmeister-logo-v2.svg" alt="" width="48" height="48"><span class="site-brand-name">Fugenmeister GmbH</span>';
   oldBrand.replaceWith(brand);
-  const quote = inner.querySelector("div:last-child a");
-  if (quote) {
-    quote.classList.add("site-quote");
-    quote.href = "kontakt.html?type=quote#contactForm";
-  }
   const nav = inner.querySelector("nav");
   if (!nav) return;
   nav.id = "site-navigation";
