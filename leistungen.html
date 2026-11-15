@@ -310,87 +310,6 @@
             </div>
           </div>
         </section>
-        <!-- Technical Specs / Data Viz Section -->
-        <section
-          class="bg-primary text-on-primary py-section-gap px-margin-desktop overflow-hidden"
-        >
-          <div
-            class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center"
-          >
-            <div>
-              <h2 class="font-headline-lg text-headline-lg mb-stack-md">
-                Qualität, die man messen kann.
-              </h2>
-              <p class="font-body-lg text-body-lg opacity-80 mb-12">
-                Unsere Arbeit basiert auf messbaren Fakten. Wir nutzen modernste
-                Sensortechnik und Materialanalysen, um die perfekte Lösung für
-                Ihr Objekt zu berechnen.
-              </p>
-              <div class="space-y-8">
-                <div class="space-y-2">
-                  <div
-                    class="flex justify-between font-label-caps text-label-caps uppercase tracking-widest"
-                  >
-                    <span>Haltbarkeit (Jahre)</span>
-                    <span>25+ Jahre</span>
-                  </div>
-                  <div
-                    class="h-1 w-full bg-white/10 rounded-full overflow-hidden"
-                  >
-                    <div
-                      class="h-full bg-white w-full origin-left transition-transform duration-1000"
-                      style="transform: scaleX(0.9)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="space-y-2">
-                  <div
-                    class="flex justify-between font-label-caps text-label-caps uppercase tracking-widest"
-                  >
-                    <span>Rissüberbrückung</span>
-                    <span>Bis 5mm</span>
-                  </div>
-                  <div
-                    class="h-1 w-full bg-white/10 rounded-full overflow-hidden"
-                  >
-                    <div
-                      class="h-full bg-white w-full origin-left transition-transform duration-1000"
-                      style="transform: scaleX(0.75)"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="relative">
-              <div
-                class="aspect-square bg-white/5 rounded-full flex items-center justify-center relative"
-              >
-                <div
-                  class="absolute inset-0 border border-white/10 rounded-full animate-[spin_20s_linear_infinite]"
-                ></div>
-                <div class="text-center p-12">
-                  <span
-                    class="material-symbols-outlined text-8xl mb-4 font-thin"
-                    >verified_user</span
-                  >
-                  <div class="font-headline-md text-headline-md">
-                    Zertifizierte Sicherheit
-                  </div>
-                  <p class="font-body-md opacity-60 mt-2 italic">
-                    Geprüft nach Schweizer SIA Normen
-                  </p>
-                </div>
-              </div>
-              <!-- Absolute accents -->
-              <div
-                class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-white/20"
-              ></div>
-              <div
-                class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-white/20"
-              ></div>
-            </div>
-          </div>
-        </section>
         <!-- CTA Section -->
         <section class="py-section-gap px-margin-desktop bg-surface">
           <div class="max-w-container-max mx-auto text-center">
@@ -423,25 +342,7 @@
             </div>
           </div>
         </section>
-        <script>
-          // Simple intersection observer for the progress bars animation
-          const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.style.transform = entry.target.dataset.scale;
-                }
-              });
-            },
-            { threshold: 0.5 },
-          );
 
-          document.querySelectorAll(".origin-left").forEach((bar) => {
-            bar.dataset.scale = bar.style.transform;
-            bar.style.transform = "scaleX(0)";
-            observer.observe(bar);
-          });
-        </script>
       </div>
     </main>
     <footer
@@ -540,7 +441,7 @@
         <div
           class="border-t border-outline-variant pt-stack-lg text-center text-label-caps text-outline uppercase tracking-widest"
         >
-          © 2024 Fugenmeister GmbH. Alle Rechte vorbehalten.
+          © 2026 Fugenmeister GmbH. Alle Rechte vorbehalten.
         </div>
       </div>
     </footer>
