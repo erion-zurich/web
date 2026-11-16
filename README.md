@@ -62,3 +62,7 @@ CONTACT_FROM_EMAIL=Fugenmeister Website <anfragen@your-verified-domain.ch>
 ```
 
 `CONTACT_FROM_EMAIL` must use a domain verified in Resend. The fallback `onboarding@resend.dev` is useful only for initial Resend testing. Apply the variables to Production, Preview, and Development as appropriate, then redeploy the project.
+
+For local email testing, copy `.env.example` to `.env.local`, replace the placeholders, and run `npx vercel dev`. Local environment files are ignored by Git. The static preview (`npm run dev`) does not execute `/api/contact`, so it cannot send form submissions.
+
+After deployment, submit the contact form and check that the business inbox receives the inquiry and the visitor receives the acknowledgement. Replies to the inquiry go to the visitor's email address. If sending fails, check the Vercel Function logs and Resend email logs.
